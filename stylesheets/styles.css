@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Noto+Sans&family=Odibee+Sans&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    /* align-items: center; */
+    font-family: 'IBM Plex Sans', sans-serif;
+    background: #faf9f8;
+    /* font-family: 'Noto Sans', sans-serif; */
+}
+
+form
+{
+    display: flex;
+    flex-direction: column;
+    width: 454px;
+    gap: 16px;
+    margin-top: 5rem;
+}
+
+.todo-listContainer
+{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2px;
+    /* height: 20rem; */
+    gap: 8px;
+}
+
+.todoContainer
+{
+    display: flex;
+    gap: 6px;
+    /* justify-content: center; */
+    align-items: center;
+    /* position: relative; */
+    padding: 12px;
+    background: #fff;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+}
+
+.rm-todo
+{
+    font-size: 22px;
+}
+
+.task
+{
+    width: 100%;
+    padding-right: 2rem;
+}
+
+.i-task
+{
+    display: flex;
+    padding: 12px;
+    background: #fff;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+
+}
+
+input
+{
+    width: 100%;
+}
