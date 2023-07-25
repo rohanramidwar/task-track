@@ -12,65 +12,72 @@ body
     display: flex;
     justify-content: center;
     min-height: 100vh;
-    /* align-items: center; */
     font-family: 'IBM Plex Sans', sans-serif;
-    background: #faf9f8;
-    /* font-family: 'Noto Sans', sans-serif; */
+    background: #f3f3f1;
 }
 
 form
 {
     display: flex;
     flex-direction: column;
-    width: 454px;
-    gap: 16px;
+    width: 461.333px;
+    gap: 10px;
     margin-top: 5rem;
 }
+
+.material-symbols-outlined
+{
+    color: #78BAFD;
+}
+
+
+/* input task  */
+
+.i-task
+{
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: none;
+}
+
+.add-btn
+{
+    padding: 6px;
+    font-size: 14px;
+    background: none;
+    border: 1px solid #000;
+}
+
+
+/* display task  */
 
 .todo-listContainer
 {
     display: flex;
     flex-direction: column-reverse;
-    gap: 2px;
-    /* height: 20rem; */
-    gap: 8px;
+    gap: 6px;
 }
 
 .todoContainer
 {
     display: flex;
-    gap: 6px;
-    /* justify-content: center; */
+    gap: 16px;
     align-items: center;
-    /* position: relative; */
-    padding: 12px;
-    background: #fff;
+    padding: 14px 20px;
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 6px;
+    border-radius: 4px;
+    background: #fff;
 }
 
-.rm-todo
+.rm-task
 {
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .task
 {
     width: 100%;
     padding-right: 2rem;
-}
-
-.i-task
-{
-    display: flex;
-    padding: 12px;
-    background: #fff;
-    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 6px;
-
-}
-
-input
-{
-    width: 100%;
 }
