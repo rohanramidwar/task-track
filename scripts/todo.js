@@ -1,0 +1,1 @@
+alert("Linked todo.js")
