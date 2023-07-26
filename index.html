@@ -15,21 +15,12 @@
             <span class="material-symbols-outlined">
                 circle
                 </span>
-            <input class="i-task" type="text" placeholder="Add a task">
-            <button class="add-btn">Add</button>
+            <input id="iTask" class="i-task" type="text" placeholder="Add a task">
+            <span class="add-btn" onclick="addTask()">Add</span>
         </div>
 
-        <div class="todo-listContainer">
-            <div class="todoContainer">
-                <span class="material-symbols-outlined">
-                    circle
-                    </span>
-                <span class="task">this is task this is task this is task this is task this is task</span>
-                <span class="material-symbols-outlined rm-task">
-                    close
-                    </span>
-            </div>
-            <div class="todoContainer">
+        <ul id="todoListContainer" class="todo-listContainer">
+            <!-- <li class="todoContainer">
                 <span class="material-symbols-outlined">
                     circle
                     </span>
@@ -37,18 +28,9 @@
                 <span class="material-symbols-outlined rm-task">
                     close
                     </span>
-            </div>
-            <div class="todoContainer">
-                <span class="material-symbols-outlined">
-                    circle
-                    </span>
-                <span class="task">this is task 3</span>
-                <span class="material-symbols-outlined rm-task">
-                    close
-                    </span>
-            </div>
+            </li> -->
             
-        </div>
+        </ul>
     </form>
 
     <script src="scripts/todo.js"></script>
