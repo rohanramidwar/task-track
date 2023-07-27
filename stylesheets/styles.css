@@ -25,11 +25,20 @@ form
     margin-top: 5rem;
 }
 
+h1
+{
+    color: #3459c1;
+}
+
 .material-symbols-outlined
 {
     color: #78BAFD;
 }
 
+span
+{
+    cursor: pointer;
+}
 
 /* input task  */
 
@@ -45,9 +54,10 @@ form
 .add-btn
 {
     padding: 6px;
-    font-size: 14px;
+    font-size: 12px;
     background: none;
     border: 1px solid #000;
+    font-weight: 600;
 }
 
 
@@ -74,6 +84,7 @@ form
 
 .rm-task
 {
+    color: #808080;
     font-size: 20px;
 }
 
@@ -83,7 +94,8 @@ form
     padding-right: 2rem;
 }
 
-span
+.line-through
 {
-    cursor: pointer;
+    text-decoration: line-through;
+    opacity: 40%;
 }

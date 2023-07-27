@@ -15,20 +15,11 @@
             <span class="material-symbols-outlined">
                 circle
                 </span>
-            <input id="iTask" class="i-task" type="text" placeholder="Add a task">
+            <input id="iTask" class="i-task" type="text" placeholder="Add a task" onkeyup="addBtnActive()">
             <span class="add-btn" onclick="addTask()">Add</span>
         </div>
 
         <ul id="todoListContainer" class="todo-listContainer">
-            <li class="todoContainer">
-                <span class="material-symbols-outlined">
-                    circle
-                    </span>
-                <span class="task">this task was added</span>
-                <span class="material-symbols-outlined rm-task">
-                    close
-                    </span>
-            </li>
             
         </ul>
     </form>
