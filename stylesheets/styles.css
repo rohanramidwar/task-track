@@ -79,7 +79,6 @@ span
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     background: #fff;
-
 }
 
 .rm-task
@@ -97,5 +96,7 @@ span
 .line-through
 {
     text-decoration: line-through;
-    opacity: 40%;
+    color: #808080;
 }
+
+

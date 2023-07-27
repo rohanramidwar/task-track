@@ -17,6 +17,7 @@ function addTask()
          
         let taskComplete = document.createElement("span")
         taskComplete.classList.add("material-symbols-outlined")
+        taskComplete.classList.add("circle")
         taskComplete.innerHTML = "circle"
         todoContainer.appendChild(taskComplete)
     
@@ -49,8 +50,20 @@ todoListContainer.addEventListener("click", function(e)
         e.target.parentElement.remove()
     }
     // task complete 
-    else if(e.target.classList.contains("task"))
+    else if(e.target.classList.contains("task") || e.target.classList.contains("circle"))
     {
-        e.target.classList.toggle("line-through")
+        e.target.parentElement.children[1].classList.toggle("line-through")
+        if(e.target.parentElement.children[1].classList.contains("line-through"))
+        {
+            e.target.parentElement.children[0].innerHTML = "check_circle"
+            e.target.parentElement.children[0].style.color = "#008000"
+        }
+        else
+        {
+            e.target.parentElement.children[0].innerHTML = "circle"
+            e.target.parentElement.children[0].style.color = "#78BAFD"
+        }
     }
+
 })
+
